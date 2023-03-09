@@ -12,10 +12,10 @@
 -- Estructura de tabla jugador
 
 CREATE TABLE `jugador` (
-`id` BIGINT NOT NULL AUTO_INCREMENT,
-`nombre` VARCHAR(45)  CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-`avatar` VARCHAR(255)  CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-`id_equipo` BIGINT  DEFAULT null,
-`puntos` INT NOT NULL DEFAULT '0',
-PRIMARY KEY (`id`)
+    `id` BIGINT NOT NULL AUTO_INCREMENT,
+    `nombre` VARCHAR(45)  CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+    `avatar` VARCHAR(255)  CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+    `id_equipo` BIGINT  DEFAULT null,
+    `puntos` INT NOT NULL DEFAULT '0',
+    PRIMARY KEY (`id`)
 ) ENGINE=InnoDB;

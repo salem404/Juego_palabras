@@ -7,10 +7,7 @@ import lombok.Setter;
 @Setter
 public class CrearJugadorDTO {
     private String nombre;
-
     private String avatar;
-
     private Long id_equipo;
-
     private Long puntos;
 }

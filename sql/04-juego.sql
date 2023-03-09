@@ -9,12 +9,13 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
--- Estructura de tabla equipo
-
-CREATE TABLE `equipo` (
+-- Estructura de tabla partida
+DROP TABLE IF EXISTS `juego`;
+CREATE TABLE `juego` (
     `id` BIGINT NOT NULL AUTO_INCREMENT,
-    `nombre_equipo` VARCHAR(45)  CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-    `puntos` INT NOT NULL DEFAULT '0',
-    `logo` VARCHAR(255)  CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+    `dificultad` ENUM('facil','normal','dificil') DEFAULT 'normal',
+    `instrucciones` TEXT,
+    `nombre` VARCHAR(45) DEFAULT '',
+    `intentos_max` INT DEFAULT 5,
     PRIMARY KEY (`id`)
-) ENGINE=MyISAM;
+) ENGINE=InnoDB;
