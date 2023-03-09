@@ -8,44 +8,52 @@
 - /jugador/{id}
 
 ## DELETE - Borrado
+
 - /equipos/{id}
 - /jugador/{id}
 
 ## PUT - Edición
+
 - /equipo/{id}
-    - ```` JSON
+
+  - ```JSON
       {
         "nombre_equipo": "Los maquinas",
         "puntos": 0,
-        "logo": "" 
+        "logo": ""
       }
+    ```
+
 - /jugador/{id}
-  - ```` JSON
+
+  - ```JSON
         {
         "nombre": "Nombre",
         "avatar": "",
-        "equipo": 
-            {
-            "id": 1
-            },
+        "id_equipo": 1,
         "puntos": 0
-        } ```
-## POST - Creación 
+        }
+    ```
+
+## POST - Creación
+
 - /equipos
-    - ```` JSON
+
+  - ```JSON
       {
         "nombre_equipo": "Los maquinas",
         "puntos": 0,
-        "logo": "" 
+        "logo": ""
       }
+    ```
+
 - /jugadores
-    - ```` JSON
+
+  - ```JSON
         {
         "nombre": "Nombre",
         "avatar": "",
-        "equipo": 
-            {
-            "id": 1
-            },
+        "id_equipo": 1,
         "puntos": 0
-        } ```
+        }
+    ```
