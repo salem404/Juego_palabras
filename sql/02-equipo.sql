@@ -12,9 +12,9 @@
 -- Estructura de tabla equipo
 
 CREATE TABLE `equipo` (
-`id` BIGINT(20) NOT NULL AUTO_INCREMENT,
+`id` BIGINT NOT NULL AUTO_INCREMENT,
 `nombre_equipo` VARCHAR(45)  CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-`puntos` INT(20) NOT NULL DEFAULT '0',
+`puntos` INT NOT NULL DEFAULT '0',
 `logo` VARCHAR(255)  CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
 PRIMARY KEY (`id`)
 ) ENGINE=MyISAM;

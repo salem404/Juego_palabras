@@ -17,11 +17,11 @@
 - /equipo/{id}
 
   - ```JSON
-    {
-      "nombre_equipo": "Los maquinas",
-      "puntos": 0,
-      "logo": ""
-    }
+      {
+        "nombre_equipo": "Los maquinas",
+        "puntos": 0,
+        "logo": ""
+      }
     ```
 
 - /jugador/{id}
@@ -30,10 +30,7 @@
         {
         "nombre": "Nombre",
         "avatar": "",
-        "equipo":
-            {
-            "id": 1
-            },
+        "id_equipo": 1,
         "puntos": 0
         }
     ```
@@ -43,23 +40,20 @@
 - /equipos
 
   - ```JSON
-    {
-      "nombre_equipo": "Los maquinas",
-      "puntos": 0,
-      "logo": ""
-    }
+      {
+        "nombre_equipo": "Los maquinas",
+        "puntos": 0,
+        "logo": ""
+      }
     ```
 
 - /jugadores
 
   - ```JSON
-      {
-      "nombre": "Nombre",
-      "avatar": "",
-      "equipo":
-          {
-          "id": 1
-          },
-      "puntos": 0
-      }
+        {
+        "nombre": "Nombre",
+        "avatar": "",
+        "id_equipo": 1,
+        "puntos": 0
+        }
     ```
